@@ -1,16 +1,34 @@
 <div class="wrapper">
-  <h1>Add New Books</h1>
-  <%= simple_form_for @book do |f| %>
-  <%= f.input :title %>
-  <br>
-  <%= f.input :author %>
-  <br>
-  <%= f.button :submit %>
-  <% end %>
-  <hr>
-  <h1>Book Index</h1>
-  <% @books.each do |book| %>
-  <h3><%= book.title %></h3>
-  <p>- by <%= book.author %></p>
-  <% end %>
-</div>
+  <div class="half">
+    <h1>Why Are Books So Important</h1>
+    <p>Nothing can add to our intellect more than reading a book.  In books, we can experience new things that we would not normally be able to experience. With an active imagination, you can go to other worlds or made up worlds. Books can change our lives and other people’s lives. Reading can make us more intelligent. Without reading we wouldn’t know anything that we know today. Our forefathers have taught us more than we know.
+      
+      We as individuals are capable of inventing new ideas, creating manuals to teach others how to save lives, writing books to teach our children about history, other cultures, the world around us and setting up new laws that will forever change our lives and the lives of others. We have educated ourselves beyond our ancestors by reading and studying books and manuals. We now can read manuals about healthcare, how to fix things, how to make things necessary for survival. We have learned how to create new inventions such as the computer, microwave and the list goes on and on.
+      <br><br>
+      Books are filled with knowledge, parables, insights into a happy life, helpful topics about life, love, fear, child rearing, prayer, worship and helpful advice. One can read about romance, the creation of the world, future events, and big battles that men have fought. Without books we wouldn’t know anything about other cultures, extinct animals, important historical events, scientific studies, and fascinating research. Books help us to have critical thinking skills, teaches us how to perform task, helps us plan for our future, perform jobs better, and solve problems.
+      <br><br>
+      Look at some books that have inspired us. The Adventures of Tom Sawyer, Alice in Wonderland or To Kill A Mockingbird.
+      <br><br>
+      The writers of these books had to learn to write before they could tell their stories. Where do you think their stories came from? Their imagination, their own life experiences. Maybe they got the idea to write a book from watching their uncle deliver mail, or maybe from their animals. They might have had a dog that could chase people up trees. Maybe they had a bird that could sing. There are a lot of characters from books that were made up about real people.
+      <br><br>
+      Writing a story or book starts with an imagination and using that imagination to be creative. By using your imagination, your mind is continually active and therefore you can learn things quicker. So is reading important?  Yes because books are the foundation of what this world is all about. </p>
+    </div>
+    <div class="second-half">
+      <h1>Add New Books</h1>
+      <%= simple_form_for @book do |f| %>
+      <%= f.input :title %>
+      <br>
+      <%= f.input :author %>
+      <br>
+      <%= f.button :submit %>
+      <% end %>
+      <hr>
+      
+      <h1>Book Index</h1>
+      <% @books.each do |book| %>
+      <h3><%= book.title %></h3>
+      <p>- by <%= book.author %></p>
+      <% end %>
+    </div>
+  </div>
+  
