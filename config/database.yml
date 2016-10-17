@@ -1,0 +1,29 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: fhquiz_development
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
+  
+  test:
+    adapter: postgresql
+    encoding: unicode
+    database: fhquiz_test
+    pool: 5
+    username: postgres
+    password: password
+    host: localhost
+    
+    
+    production:
+      adapter: postgresql
+      encoding: unicode
+      database: fhquiz_production
+      pool: 5
+      username: postgres
+      password: password
+      host: localhost
+      
