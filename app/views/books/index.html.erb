@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <h1>Add New Books</h1>
+  <%= simple_form_for @book do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.button :submit %>
+  <% end %>
+  
+  <h1>Book Index</h1>
+  <%= @books.each do |book| %>
+  <h3><%= book.title %></h3>
+  <p><%= book.author %></p>
+  <% end %>
+</div>
